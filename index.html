@@ -3,28 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Modern Sign Up Form</title>
 </head>
 <body>
     <div class="container">
-    <div class="part2">
-    <input type="email" id="email"placeholder="Email address">
-    <br>
-    <input type="password" id="password"placeholder="password">
-    <br>
-    <div class="yego">
-    <input type="text" id="text" placeholder="First name">
-    <input type="text" id="last" placeholder="Last name">
+        <div class="form-card">
+            <div class="form-header">
+                <h1>Create your account</h1>
+                <p>Enter your details to get started</p>
+            </div>
+            
+            <form>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" placeholder="you@example.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Min. 8 characters" required>
+                </div>
+                
+                <div class="input-group">
+                    <div class="form-control">
+                        <label for="firstName">First name</label>
+                        <input type="text" id="firstName" placeholder="John" required>
+                    </div>
+                    
+                    <div class="form-control">
+                        <label for="lastName">Last name</label>
+                        <input type="text" id="lastName" placeholder="Doe" required>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <div class="form-control">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" placeholder="+1 (555) 000-0000">
+                    </div>
+                    
+                    <div class="form-control">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" placeholder="Your company name">
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-btn">Create account</button>
+                
+                <p class="privacy-text">
+                    By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                </p>
+            </form>
+        </div>
     </div>
-    <br>
-    <div class="hello">
-     <input type="tel" id="number"placeholder="Phone number">
-     <input type="text" id="company"placeholder="Company (Ex.Google)">
-     
-     </div>
-     <button>submit</button>
-</div>
-</div>
 </body>
 </html>

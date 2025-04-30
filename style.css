@@ -1,55 +1,143 @@
-body{
+* {
     margin: 0;
-    padding: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.container{
+
+body {
+    background-color: #f5f8fa;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 14%;
+    min-height: 100vh;
 }
-.part2{
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+}
+
+.form-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    transition: transform 0.3s ease;
+}
+
+.form-card:hover {
+    transform: translateY(-5px);
+}
+
+.form-header {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.form-header h1 {
+    color: #111827;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.form-header p {
+    color: #4b5563;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-group {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   width: 50%;
-   height: 50vh;
-   background:rgb(4, 4, 37);
+    gap: 12px;
+    margin-bottom: 20px;
 }
-.yego{
-    display: flex;
-    gap: 10px;
+
+.form-control {
+    position: relative;
+    flex: 1;
 }
-.hello{
-    display: flex;
-    gap: 10px;
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
 }
-#email{
-    padding: 10px;
-    width: 370px;
+
+input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #111827;
+    background-color: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+input::placeholder {
+    color: #9ca3af;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 14px 24px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 12px;
+}
+
+.submit-btn:hover {
+    background-color: #2563eb;
+}
+
+.privacy-text {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: #6b7280;
+}
+
+.privacy-text a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.privacy-text a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 16px;
+    }
     
-}
-#password{
-
-    padding: 10px;
-    width: 370px;
-
-}
-#text{
-    padding: 10px;
-}
-#number{
-    padding: 10px;
-}
-button{
-margin-right: 28%;
-margin-top: 20px;
-padding: 10px;
-width: 100px;
-border-radius: 40px;
-font-weight: bold;
-color: white;
-background: dodgerblue;
-
+    .form-card {
+        padding: 24px;
+    }
+    
+    .input-group {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
