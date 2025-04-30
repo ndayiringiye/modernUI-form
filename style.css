@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: o;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14%;
+}
+.part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   width: 50%;
+   height: 50vh;
+   background:rgb(4, 4, 37);
+}
+.yego{
+    display: flex;
+    gap: 10px;
+}
+.hello{
+    display: flex;
+    gap: 10px;
+}
+#email{
+    padding: 10px;
+    width: 370px;
+    
+}
+#password{
+
+    padding: 10px;
+    width: 370px;
+
+}
+#text{
+    padding: 10px;
+}
+#number{
+    padding: 10px;
+}
+button{
+margin-right: 28%;
+margin-top: 20px;
+padding: 10px;
+width: 100px;
+border-radius: 40px;
+font-weight: bold;
+color: white;
+background: dodgerblue;
+
+}
